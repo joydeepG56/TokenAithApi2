@@ -9,6 +9,7 @@ namespace TokenAithApi2.Controllers
 {
     public class EmployeeController : ApiController
     {
+        [Authorize]
         public IEnumerable<Employee> GetEmployees()
         {
             using (Test2Entities _db = new Test2Entities())
